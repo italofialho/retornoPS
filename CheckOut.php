@@ -67,6 +67,7 @@ class CheckOut
         $output = curl_exec($ch);
         
         curl_close($ch);
+		
         return $output;
         
     }
