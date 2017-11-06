@@ -13,8 +13,8 @@ class PagSeguro
     function __construct($pdo)
     {
         $this->pdo   = $pdo;
-        $this->email = "italofialho@hotmail.com.br";
-        $this->token = "984E5F5DADEF49F0A2C784C7B3616912";
+        $this->email = "";
+        $this->token = "";
     }
     
     private function parseData()
