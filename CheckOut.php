@@ -37,12 +37,6 @@ class CheckOut
         if ($checkout != 'Unauthorized') {
             $checkout = simplexml_load_string($checkout);
         }
-		
-		if ($checkout == 'Unauthorized') {
-			array_push($this->log, "Unauthorized");
-		} else {
-			$checkout = simplexml_load_string($temp_Transaction);
-		}
         
         return $checkout;
     }
@@ -67,7 +61,6 @@ class CheckOut
         $output = curl_exec($ch);
         
         curl_close($ch);
-		
         return $output;
         
     }
